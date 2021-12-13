@@ -5,6 +5,12 @@
 }
 
 .container-1000{
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
+}
+
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
 }

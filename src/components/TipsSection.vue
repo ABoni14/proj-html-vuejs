@@ -1,5 +1,5 @@
 <template>
-  <section class="container-1000">
+  <section class="container-1000 clearfix">
     <div class="left-content">
       <h2>Get tips tricks on how to skyrocket your sales.</h2>
       <p>Faff about only a quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny.!</p>
@@ -34,6 +34,7 @@ export default {
 @import "../assets/style/vars.scss";
 
 section{
+  margin-bottom: 50px;
   .left-content,
   .right-content{
     float: left;
