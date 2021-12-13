@@ -15,10 +15,11 @@
         <div class="icon">
           <i class="fas fa-search"></i>
           <i class="fas fa-shopping-cart">
-            <div class="number-shop">
+            
+          </i>
+          <div class="number-shop">
               0
             </div>
-          </i>
         </div>
         <button class="button">
           Get Started
@@ -90,27 +91,26 @@ header{
         align-items: center;
         font-size: 15px;
         margin-right: 15px;
+        position: relative;
         i{
           padding: 0 8px;
         }
         .fa-shopping-cart{
-          position: relative;
           z-index: 99;
-          .number-shop{
-            position: absolute;
-            color: white;
-            top: -5px;
-            right: -5px;
-            padding: 1px 5px;
-            border-radius: 50%;
-            background-color: $primary-color;
-            z-index: 1;
-            }
-          }
+        }
+        .number-shop{
+          position: absolute;
+          color: white;
+          top: -7px;
+          right: -5px;
+          padding: 0.5px 5px;
+          border-radius: 50%;
+          background-color: $primary-color;
+          z-index: 1;
+        }
       }
       button{
         margin-left: 15px;
-        // line-height: 40px !important;
       }
     }  
   } 
