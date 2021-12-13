@@ -14,7 +14,11 @@
         </ul>
         <div class="icon">
           <i class="fas fa-search"></i>
-          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-shopping-cart">
+            <div class="number-shop">
+              0
+            </div>
+          </i>
         </div>
         <button class="button">
           Get Started
@@ -43,7 +47,7 @@ export default {
 @import "../assets/style/vars.scss";
 
 header{
-  height: 100px;
+  height: 60px;
   background-color: white;
   .header-content{
     height: 100%;
@@ -51,10 +55,11 @@ header{
     justify-content: space-between;
     align-items: center;
     img{
-      width: 60px;
+      height: 50px;
     }
     .nav-bar{
       display: flex;
+      align-items: center;
       ul{
         list-style: none;
         display: flex;
@@ -62,6 +67,7 @@ header{
         margin-right: 15px;
         li{
           cursor: pointer;
+          line-height: 60px;
           &:hover,
           &.active{
             border-bottom: 2px solid $primary-color;
@@ -75,8 +81,7 @@ header{
             color: black;
             padding: 0 10px;
             font-size: 15px;
-            font-weight: 700;
-            height: 100px;
+            font-weight: 600;
           }
         }
       }
@@ -85,11 +90,28 @@ header{
         align-items: center;
         font-size: 15px;
         margin-right: 15px;
+        i{
+          padding: 0 8px;
+        }
+        .fa-shopping-cart{
+          position: relative;
+          z-index: 99;
+          .number-shop{
+            position: absolute;
+            color: white;
+            top: -5px;
+            right: -5px;
+            padding: 1px 5px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            z-index: 1;
+            }
+          }
       }
-      // .button{
-      //   padding: 10px;
-      //   background-color: $primary-color;
-      // }
+      button{
+        margin-left: 15px;
+        // line-height: 40px !important;
+      }
     }  
   } 
 }
