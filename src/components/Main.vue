@@ -4,6 +4,8 @@
     <TipsSection />
     <PopularFeatures />
     <Testimonials />
+    <LatestPosts />
+    <ContactTeam />
   </main>
 </template>
 
@@ -12,6 +14,8 @@ import OnlineMarketing from "./OnlineMarketing.vue"
 import TipsSection from "./TipsSection.vue"
 import PopularFeatures from "./PopularFeatures.vue"
 import Testimonials from "./Testimonials.vue"
+import LatestPosts from "./LatestPosts.vue"
+import ContactTeam from "./ContactTeam.vue"
 
 export default {
   name: "Main",
@@ -20,7 +24,9 @@ export default {
     OnlineMarketing,
     TipsSection,
     PopularFeatures,
-    Testimonials
+    Testimonials,
+    LatestPosts,
+    ContactTeam
   }
 }
 </script>

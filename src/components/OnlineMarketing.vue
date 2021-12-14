@@ -67,7 +67,7 @@ section{
       p{
         color: $secondary-text-color;
         margin-bottom: 10px;
-        line-height: 20px;
+        line-height: 25px;
         font-size: 14px;
         font-weight: 500;
       }

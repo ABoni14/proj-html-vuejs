@@ -101,7 +101,7 @@ header{
         .number-shop{
           position: absolute;
           color: white;
-          top: -7px;
+          top: -9px;
           right: -5px;
           padding: 0.5px 5px;
           border-radius: 50%;

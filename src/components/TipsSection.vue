@@ -56,7 +56,10 @@ section{
     .box{
       display: flex;
       align-items: center;
-      padding: 10px;
+      padding: 15px 10px;
+      h3{
+        margin-bottom: 15px;
+      }
       &.box-active{
         border: 1px solid $border-color;
         box-shadow: 5px 15px 20px $shadow-color;
@@ -71,7 +74,7 @@ section{
   }
   .right-content{
     img{
-      margin-top: 60px;
+      margin-top: 15px;
       width: 100%;
     }
   }
