@@ -10,13 +10,20 @@
         <h4>Julia Aann <span>- COO Sofbox</span></h4>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
         <div class="apici">
-          <i class="fas fa-quote-left"></i>
+          <div class="icon">
+            <i class="fas fa-quote-left"></i>
+          </div> 
         </div>
       </div>
       <div class="card">
         <img src="../assets/img/27.jpeg" alt="">
         <h4>Mac Znder <span>- Manager Sofbox</span></h4>
         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip.</p>
+        <div class="apici">
+          <div class="icon">
+            <i class="fas fa-quote-left"></i>
+          </div> 
+        </div>
       </div>
     </div>
     <div class="circle-contain container-1000">
@@ -74,6 +81,8 @@ section{
         width: 70px;
         border-radius: 50%;
         margin-bottom: 30px;
+        position: relative;
+        z-index: 100;
       }
       h4{
         margin-bottom: 30px;
@@ -95,17 +104,22 @@ section{
         width: 100%;
         height: 100%;
         position: absolute;
+        left: 32%;
+        top: 74%;
         z-index: 3;
-        top: 50%;
-        left: 50%;
         transform: translate(-50%, -50%);
         i{
-          font-size: 100px;
+          font-size: 170px;
           position: absolute;
           color: $border-color;
           z-index: 5;
           transform: rotate(180deg);
         } 
+        .icon{
+          position: relative; 
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }

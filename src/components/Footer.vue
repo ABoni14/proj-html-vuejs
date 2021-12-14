@@ -49,6 +49,7 @@ footer{
     img{
       width: 130px;
       margin-bottom: 10px;
+      cursor: pointer;
     }
     p{
       color: $secondary-text-color;

@@ -14,7 +14,8 @@
       class="card">
         <h3>{{feature.text}}</h3>
         <i 
-        class="fas" :class="feature.img"></i>
+        class="fas" :class="feature.img"
+        v-if="{blue : (feature.color === 'blue')}"></i>
       </div>
     </div>
   </section>
@@ -73,6 +74,15 @@ section{
       i{
         font-size: 30px;
         margin-bottom: 20px;
+      }
+      .blue{
+        color: $primary-color;
+      }
+      .orange{
+        color: #ff796d;
+      }
+      .green{
+        color: #6cdac1;
       }
     }
   }
