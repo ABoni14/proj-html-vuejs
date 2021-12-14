@@ -45,17 +45,15 @@ export default {
 section{
   margin-bottom: 30px;
   .contain-text{
-    background-image: url("../assets/img/15.png");
-    background-color: $secondary-bg;
-    background-size: cover;
-    background-position:center;
+    background-image: url("../assets/img/15.png"), linear-gradient($secondary-bg, lighten($secondary-bg, 90%));
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 130px;
-    padding-top: 130px;
     margin-bottom: 30px;
     h2{
       font-size: 30px;
@@ -104,10 +102,10 @@ section{
         width: 100%;
         height: 100%;
         position: absolute;
-        left: 32%;
-        top: 74%;
+        left: 0;
+        top: 0;
         z-index: 3;
-        transform: translate(-50%, -50%);
+        // transform: translate(-50%, -50%);
         i{
           font-size: 170px;
           position: absolute;
@@ -116,7 +114,9 @@ section{
           transform: rotate(180deg);
         } 
         .icon{
-          position: relative; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 100%;
           height: 100%;
         }
