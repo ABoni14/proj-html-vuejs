@@ -12,10 +12,10 @@
         <p>{{data.description}}</p>
         <ul>
           <li
-          v-for="(role, index) in OnlineMarketing"
+          v-for="(role, index) in data.role"
           :key="index"
           >
-            <i class="fas fa-check"></i>{{role.role[index]}}
+            <i class="fas fa-check"></i>{{role}}
           </li>
         </ul>
       </div>
