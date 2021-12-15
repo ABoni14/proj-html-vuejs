@@ -82,6 +82,10 @@ footer{
         a{
           color: $secondary-text-color;
           text-decoration: none;
+          transition: all 0.5s;
+          &:hover{
+            color: $primary-color;
+          }
         }
       }
     }

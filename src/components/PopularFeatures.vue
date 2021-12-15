@@ -18,8 +18,7 @@
         class="card">
           <h3>{{feature.text}}</h3>
           <i 
-          class="fas" :class="feature.img"
-          v-if="{blue : (feature.color === 'blue')}"></i>
+          class="fas" :class="[feature.img, {blue : feature.color === 'blue'}, {orange : feature.color === 'orange'}, {green : feature.color === 'green'}]"></i>
         </div>
       </div>
     </section>
@@ -74,6 +73,12 @@ export default {
         padding: 10px;
         border: 1px solid $border-color;
         box-shadow: 0px 15px 10px $shadow-color;
+        transition: all 0.2s;
+        cursor: pointer;
+        &:hover, &:hover i{
+          background-color: #6cdac1;
+          color: white;
+        }
         h3{
           font-size: 15px;
           font-weight: 500;
@@ -99,8 +104,6 @@ export default {
     position: absolute;
     top: -125px;
     left: -250px;
-    width: 100%;
-    height: 100%;
     img{
       width: 500px;
     }

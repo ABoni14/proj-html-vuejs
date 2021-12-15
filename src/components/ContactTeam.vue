@@ -168,6 +168,7 @@ section{
         right: 8px;
         bottom: 20px;
         border: 1px solid $shadow-color;
+        cursor: pointer;
         i{
           display: block;
           padding: 7px;
@@ -197,7 +198,7 @@ section{
         height: 40px;
         border: 2px solid white;
         overflow: hidden;
-        
+        cursor: pointer;
         img{
           width: 100%;
           height: 100%;

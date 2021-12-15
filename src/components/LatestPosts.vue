@@ -63,6 +63,11 @@ section{
     .card{
       width: calc(100% / 3 - 20px);
       border: 1px solid $border-color;
+      transition: all 0.5s;
+      cursor: pointer;
+      &:hover{
+        transform: scale(1.1);
+      }
       .top-card{
         padding: 5px;
         position: relative;
