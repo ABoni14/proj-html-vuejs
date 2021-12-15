@@ -17,6 +17,7 @@
         :key="index"
         class="card">
           <h3>{{feature.text}}</h3>
+          <!-- ciclo l'icona e prendendo il parametro "color" passo la classe corrispondente -->
           <i 
           class="fas" :class="[feature.img, {blue : feature.color === 'blue'}, {orange : feature.color === 'orange'}, {green : feature.color === 'green'}]"></i>
         </div>
@@ -75,6 +76,7 @@ export default {
         box-shadow: 0px 15px 10px $shadow-color;
         transition: all 0.2s;
         cursor: pointer;
+        border-radius: 5px;
         &:hover, &:hover i{
           background-color: #6cdac1;
           color: white;

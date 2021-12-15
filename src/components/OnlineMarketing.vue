@@ -1,5 +1,6 @@
 <template>
   <section class="container-1000">
+    <!-- ciclo all'interno del file js importato, assegno un nome perchè ho 2 cicli con index -->
     <div 
     v-for="(data, index) in OnlineMarketing"
     :key="`top-card${index}`"

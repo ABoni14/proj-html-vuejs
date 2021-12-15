@@ -90,6 +90,7 @@ section{
   .bottom{
     display: flex;
     justify-content: space-between;
+    // inizio instruzioni css mappa
     .left{
       width: 50%;
       height: 405px;
@@ -161,6 +162,7 @@ section{
           background-color: rgba(255, 255, 255, 0.5);
           margin-left: 3px;
           font-weight: 600;
+          cursor: pointer;
         }
       }
       .maps-button{
@@ -205,6 +207,7 @@ section{
           object-fit: cover;
 
         }
+      // fine instruzioni css mappa
       }
     }
     .right{

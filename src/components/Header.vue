@@ -4,19 +4,18 @@
       <img src="../assets/img/logo-2.png" alt="">
       <div class="nav-bar">
         <ul>
+          <!-- dopo aver ciclato gli oggetti, se index è uguale a counter aggiungo la classe active -->
           <li
           v-for="(listNav, index) in Nav"
           :key="index"
-          :class="{active : (index === counter)}"
+          :class="{active : (index === counter)}" 
           @click="counter = index">
             <a href="">{{listNav.text}}</a>
           </li>
         </ul>
-        <div class="icon">
+        <div class="icon"> 
           <i class="fas fa-search"></i>
-          <i class="fas fa-shopping-cart">
-            
-          </i>
+          <i class="fas fa-shopping-cart"></i>
           <div class="number-shop">
               0
             </div>
@@ -94,6 +93,11 @@ header{
         position: relative;
         i{
           padding: 0 8px;
+          cursor: pointer;
+          transition: all 0.5;
+          &:hover{
+            transform: scale(1.2);
+          }
         }
         .fa-shopping-cart{
           z-index: 99;
