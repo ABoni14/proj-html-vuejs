@@ -79,7 +79,7 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     h2, p{
       margin-bottom: 25px;
     }

@@ -50,7 +50,7 @@ section{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     p{
       color: $secondary-text-color;
       margin-top: 20px;
